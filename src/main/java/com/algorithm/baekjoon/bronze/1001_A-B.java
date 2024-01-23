@@ -1,4 +1,4 @@
-package com.algorithm.backjoon.bronze;
+package com.algorithm.baekjoon.bronze;
 
 import java.io.*;
 
@@ -8,17 +8,12 @@ public class Main {
         BufferedReader br = new BufferedReader(new BufferedReader(new InputStreamReader(System.in)));
         BufferedWriter bw = new BufferedWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 
-        int num = 0;
+        String[] strArr = br.readLine().split(" ");
 
-        String[] strArr = br.readLine().trim().split(" ");
+        int a = Integer.parseInt(strArr[0]);
+        int b = Integer.parseInt(strArr[1]);
 
-        if (strArr[0].equals("") && strArr.length == 1){
-            num = 0;
-        } else {
-            num = strArr.length;
-        }
-
-        String result = String.valueOf(num);
+        String result = String.valueOf(a - b);
 
         bw.write(result);
         bw.flush();

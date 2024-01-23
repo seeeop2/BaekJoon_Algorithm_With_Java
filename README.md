@@ -1,1 +1,1 @@
-# BackJoon_Algorithm_With_Java
+# BaekJoon_Algorithm_With_Java

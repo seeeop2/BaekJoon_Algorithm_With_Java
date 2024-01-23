@@ -1,4 +1,4 @@
-package com.algorithm.backjoon.bronze;
+package com.algorithm.baekjoon.bronze;
 
 import java.io.*;
 
