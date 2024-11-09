@@ -1,7 +1,11 @@
 import java.io.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
+        new Main().solution();
+    }
+
+    public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -13,8 +17,10 @@ public class Main {
             int a = Integer.parseInt(input[0]);
             int b = Integer.parseInt(input[1]);
 
-            if (a <= b) {
-                minimum = Math.min(minimum, a);
+            if (a > b){
+                continue;
+            } else {
+                minimum = Math.min(minimum, b);
             }
         }
 
@@ -28,4 +34,5 @@ public class Main {
         bw.close();
         br.close();
     }
+
 }
